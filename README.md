@@ -1,5 +1,5 @@
 # BruteEye
-A tool for brute forcing MotionEye camera web panels. The purpose of this tool is to address the issue of how MotionEye handles logins. While the login panel uses a normal POST request for username and password, it will always return a 200 with no real reliable way to tell a successful login versus and failed one as it also doesn't throw redirects. Instead, client side Javascript computes a epoch timestamp and a signature of several parameters within the request into a SHA1 hash. A new GET request is then sent which the server uses to return a 200 or 403. 
+A tool for brute forcing MotionEye camera web panels. The purpose of this tool is to address the issue of how MotionEye handles logins. While the login panel uses a normal POST request for username and password, it will always return a 200 with no real reliable way to tell a successful login versus a failed one as it also doesn't throw redirects. Instead, client side Javascript computes a epoch timestamp and a signature of several parameters within the request into a SHA1 hash. A new GET request is then sent which the server uses to return a 200 or 403. 
 
 
 **Valid Pass:**
