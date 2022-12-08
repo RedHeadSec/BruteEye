@@ -18,6 +18,7 @@ parser.add_argument("-d","--delay", help="Apply sleep limiting for X seconds/ms.
 args = parser.parse_args()
 
 #Tested with version 0.36.1
+#Tested with version 0.42
 username = 'admin' # As of 0.42, the admin user can not be changed via GUI (Can be via config file). May be different for modified environments!
 # The username is passed to the client via HTLM to be parsed by client-side JS, so it is leaked for you.
 version = '1.0'
