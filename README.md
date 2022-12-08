@@ -14,6 +14,12 @@ A tool for brute forcing MotionEye camera web panels. The purpose of this tool i
 **Failure:**
 ![Burp_Suite_Professional_v2022_11_3_-_Temporary_Project_-_licensed_to_Optiv_Secuirty__125_user_license_](https://user-images.githubusercontent.com/42355245/205473142-b4f37cf9-9544-4263-acd5-2a2b2ea212cf.png)
 
+**Version 0.42:**
+The configuration file hides the admin password, but the valid password is still found due to the configuration being dumped.
+
+![Parrot_OS](https://user-images.githubusercontent.com/42355245/206356899-5d6c6b48-b067-4ce9-a75a-2ead58b32c32.png)
+
+
 
 
 ## Usage
