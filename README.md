@@ -17,8 +17,6 @@ A tool for brute forcing MotionEye camera web panels. The purpose of this tool i
 **Version 0.42:**
 The configuration file hides the admin password, but the valid password is still found due to the configuration being dumped.
 
-![Parrot_OS](https://user-images.githubusercontent.com/42355245/206356899-5d6c6b48-b067-4ce9-a75a-2ead58b32c32.png)
-
 
 
 
@@ -48,8 +46,8 @@ optional arguments:
                         Apply sleep limiting for X seconds/ms. Example: 0.5
 ```
 
-## Showcase
-![Parrot_OS_](https://user-images.githubusercontent.com/42355245/205472771-5abe4a7e-020b-4f80-a73a-7ea2f6709333.png)
+## Version 1.1 Showcase
+![Parrot_OS](https://user-images.githubusercontent.com/42355245/206814960-c1925c90-ebfc-4e72-b6e1-25bf252486c9.png)
 
 ## Questions/Comments
 This is a pretty thrown together script for instances I find this service exposed. It may have bugs with edge cases and I have not implemented everything you may find, such as HTTPS endpoints. If you have problems or improvements, submit a pull or issue. Use only on assets you own or are allowed to perform testing on. Author holds no responsibilty for modification or misuse by third parties. 
